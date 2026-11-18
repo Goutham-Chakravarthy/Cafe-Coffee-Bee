@@ -120,7 +120,7 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <div className="bg-[#F5F0E5]">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-[#241A15] min-h-[540px] lg:min-h-[600px] flex items-center">
+      <section className="relative overflow-hidden bg-[#241A15] min-h-[calc(100vh-64px)] min-h-[calc(100dvh-64px)] flex items-center">
         <div className="absolute inset-0">
           <ResilientImage
             src={IMAGES.heroKalasa}

@@ -53,6 +53,11 @@
   font-variant-numeric: tabular-nums;
 }
 
+.hero-full-screen {
+  min-height: calc(100vh - 64px);
+  min-height: calc(100dvh - 64px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
