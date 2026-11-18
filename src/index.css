@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-cream: #f5f0e5;
+  --color-ivory: #faf8f0;
+  --color-ivory-pure: #fef9ee;
+  --color-forest: #263f2c;
+  --color-moss: #526447;
+  --color-sage: #78866a;
+  --color-olive: #a0a17b;
+  --color-honey: #d9a441;
+  --color-honey-light: #f5bd58;
+  --color-amber: #b96d35;
+  --color-espresso: #38291f;
+  --color-cocoa: #594132;
+  --color-dark-roast: #241a15;
+  --color-beeswax: #e5d3a9;
+  --color-sand: #d8c8ae;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #f5f0e5;
+    color: #38291f;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, serif;
+    text-wrap: balance;
+  }
+}
+
+.shadow-warm {
+  box-shadow: 0 4px 16px -2px rgba(56, 41, 31, 0.06), 0 1px 3px 0 rgba(56, 41, 31, 0.04);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 12px 28px -4px rgba(56, 41, 31, 0.12), 0 4px 10px -2px rgba(56, 41, 31, 0.06);
+}
+
+.shadow-honey {
+  box-shadow: 0 4px 14px 0 rgba(217, 164, 65, 0.25);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
